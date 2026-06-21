@@ -1,0 +1,12 @@
+# Data files and binaries to ignore
+*.pdf
+*.zip
+pandoc_bin/
+__pycache__/
+
+# Python
+*.pyc
+*.pyo
+.env
+venv/
+env/

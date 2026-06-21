@@ -1,0 +1,10 @@
+﻿Variable,Value,,,
+FlueGasVolume(FGV),,,,
+"Captivepower,PLTU-batubara (dikoreksike7%O ) 2","3,411Nm3/MWh(40%efisiensitermal) 3.411Nm3/h/kW",,,
+Dieselgenerator,"3,241Nm3/MWh(35%efisiensitermal) 3.241Nm3/h/kW",,,
+Tungkupeleburan,"30,443Nm3/t 3.475Nm3/h/tpa",,,
+FlueGasConcentration(FGC),,,,
+"Captivepower,PLTU-batubara (PermenLHKNOMOR P.15/MENLHK/SETJEN/KUM.1/4/2019; kondisipengukuran25°C,1atm,7%O2) Unit:mg/Nm3","Sebelum2019 NO,550 x SO ,550 2 PM,100 Hg,0.03",,"Sesudah2019 NO,200 x SO ,200 2 PM,50 Hg,0.03",
+"Captivepower,coal (ringkasandatapengukuran, dikoreksike7%O ) 2 Unit:mg/Nm3","12PLTUdiIMIP NO ,228(180-276) 2 SO ,220(150-291) 2 PM,130(54-206)",,,
+"Dieselgenerator (PermenLHKNOMOR11TAHUN2021; kondisipengukuran25°C,1atm,15% O2) Unit:mg/Nm3","100-500kW NO,3400 x SO ,- 2 PM,- CO,170","501-1000kW NO,1850 x SO ,160 2 PM,95 CO,77",,"1001-3000kW NO,2300 x SO ,150 2 PM,90 CO,168"
+"Tungkupeleburan-Pengering(dryer), tungkuatautanur (ringkasandatapengukuran, dikoreksike10%O ) 2 Unit:mg/Nm3","36unitdryerdiIMIP NO ,440(182-698) 2 SO ,143(4-253) 2 PM,130(50-710)",,"32unittanurdiIMIP NO ,105(15-226) 2 SO ,105(42-167) 2 PM,1787(921-2653)",

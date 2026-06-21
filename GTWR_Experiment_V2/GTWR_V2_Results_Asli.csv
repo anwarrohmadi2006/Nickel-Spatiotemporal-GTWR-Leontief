@@ -1,0 +1,39 @@
+Provinsi,Sektor,Tahun_Operasi,Latitude,Longitude,Is_Agri,Is_Mine,PDRB_BAU_RpMiliar,Prediksi_PDRB,Residual
+Sulteng,"Pertanian,Kehutanan,danPerikanan",1,-1.43,121.4456,1,0,-1094.0,-904.058,-189.942
+Sulteng,PertambangandanEkskavasi,1,-1.43,121.4456,0,1,9588.0,7808.733,1779.267
+Sulteng,IndustriPengolahan,1,-1.43,121.4456,0,0,41.17,57.968,-16.798
+Sulteng,PengadaanListrikdanGas,1,-1.43,121.4456,0,0,161.09,57.968,103.122
+Sulteng,"PenyediaanAir,PengelolaanLimbah,dan PemulihanLimbah",1,-1.43,121.4456,0,0,20.26,57.968,-37.708
+Sulteng,Konstruksi,1,-1.43,121.4456,0,0,129.79,57.968,71.822
+Sulteng,PerdaganganBesardanEceran;Perbaikan MobildanSepedaMotor,1,-1.43,121.4456,0,0,122.87,57.968,64.902
+Sulteng,"Pertanian,Kehutanan,danPerikanan",9,-1.43,121.4456,1,0,-223.26,-194.537,-28.723
+Sulteng,PertambangandanEkskavasi,9,-1.43,121.4456,0,1,6.5,4.683,1.817
+Sulteng,IndustriPengolahan,9,-1.43,121.4456,0,0,5.62,-186.921,192.541
+Sulteng,PengadaanListrikdanGas,9,-1.43,121.4456,0,0,-57.0,-186.921,129.921
+Sulteng,"PenyediaanAir,PengelolaanLimbah,dan PemulihanLimbah",9,-1.43,121.4456,0,0,-31.0,-186.921,155.921
+Sulteng,Konstruksi,9,-1.43,121.4456,0,0,-3.75,-186.921,183.171
+Sulteng,PerdaganganBesardanEceran;Perbaikan MobildanSepedaMotor,9,-1.43,121.4456,0,0,-7.068,-186.921,179.853
+Sulteng,TransportasidanPenyimpanan,9,-1.43,121.4456,0,0,-999.0,-186.921,-812.079
+Sulteng,PenyediaanAkomodasidanMakanandan Minuman,9,-1.43,121.4456,0,0,-265.0,-186.921,-78.079
+Sulteng,InformasidanKomunikasi,9,-1.43,121.4456,0,0,-687.0,-186.921,-500.079
+Sulteng,JasaKeuangandanAsuransi,9,-1.43,121.4456,0,0,-5.92,-186.921,181.001
+Sulteng,Properti,9,-1.43,121.4456,0,0,-189.0,-186.921,-2.079
+Sulteng,JasaPerusahaan,9,-1.43,121.4456,0,0,-209.0,-186.921,-22.079
+Sulteng,"AdministrasiPemerintah,Pertahanan,dan JaminanSosialWajib",9,-1.43,121.4456,0,0,-73.0,-186.921,113.921
+Sultra,"Pertanian,Kehutanan,danPerikanan",1,-4.1449,122.1746,1,0,-394.02,-583.962,189.942
+Sultra,PertambangandanEkskavasi,1,-4.1449,122.1746,0,1,3031.0,4810.266,-1779.266
+Sultra,IndustriPengolahan,1,-4.1449,122.1746,0,0,2.31,18.504,-16.194
+Sultra,PengadaanListrikdanGas,1,-4.1449,122.1746,0,0,1.18,18.504,-17.324
+Sultra,"PenyediaanAir,PengelolaanLimbah,dan PemulihanLimbah",1,-4.1449,122.1746,0,0,0.249,18.504,-18.255
+Sultra,Konstruksi,1,-4.1449,122.1746,0,0,0.528,18.504,-17.976
+Sultra,PerdaganganBesardanEceran;Perbaikan MobildanSepedaMotor,1,-4.1449,122.1746,0,0,4.71,18.504,-13.794
+Sultra,TransportasidanPenyimpanan,1,-4.1449,122.1746,0,0,10.68,18.504,-7.824
+Sultra,PenyediaanAkomodasidanMakanandan Minuman,1,-4.1449,122.1746,0,0,0.252,18.504,-18.252
+Sultra,InformasidanKomunikasi,1,-4.1449,122.1746,0,0,1.57,18.504,-16.934
+Sultra,JasaKeuangandanAsuransi,1,-4.1449,122.1746,0,0,2.55,18.504,-15.954
+Sultra,"Pertanian,Kehutanan,danPerikanan",9,-4.1449,122.1746,1,0,-117.41,-146.133,28.723
+Sultra,PertambangandanEkskavasi,9,-4.1449,122.1746,0,1,-0.196,1.621,-1.817
+Sultra,IndustriPengolahan,9,-4.1449,122.1746,0,0,-0.247,-110.982,110.735
+Sultra,PengadaanListrikdanGas,9,-4.1449,122.1746,0,0,-0.083,-110.982,110.899
+Sultra,"PenyediaanAir,PengelolaanLimbah,dan PemulihanLimbah",9,-4.1449,122.1746,0,0,-0.033,-110.982,110.949
+Sultra,Konstruksi,9,-4.1449,122.1746,0,0,-0.647,-110.982,110.335

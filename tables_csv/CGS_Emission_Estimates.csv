@@ -1,0 +1,73 @@
+﻿Smelter Name,Regency,Province,Latitude,Longitude,Process,Status 2025,Coal_MW,Diesel_MW,Gas_MW,Hydro_MW,Solar_MW,Ni_Output_tonnes,Output_Capacity_tonnes,RE_share_pct,Estimated_CO2_tpy,GHG_Intensity_tCO2_per_tNi,Estimation_Method
+Gunbuster Nickel Industry,North Morowali Regency,Central Sulawesi,-2.00042547039831,121.43504311042,RKEF,Operating,2295.0,0.0,0.0,0.0,0.0,0.0,2000000.0,0.0,14475024,68.0,Power-based
+Indonesia Tsingshan Stainless Steel,Morowali Regency,Central Sulawesi,-2.83238130604301,122.161456778463,RKEF,Operating,1400.0,0.0,0.0,0.0,0.0,0.0,675000.0,0.0,8830080,68.0,Power-based
+Nadesico Nickel Industry,North Morowali Regency,Central Sulawesi,-2.01427457604686,121.430177208944,RKEF,Operating,0.0,0.0,0.0,0.0,0.0,80000.0,1800000.0,0,5440000,68.0,Intensity-based
+Genba Multi Mineral,North Morowali Regency,Central Sulawesi,-2.14061,121.54069,Unknown,Stalled,700.0,0.0,0.0,0.0,0.0,0.0,500000.0,0.0,4415040,60.0,Power-based
+Sulawesi Mining Investment,Morowali Regency,Central Sulawesi,-2.82450203373249,122.162005624412,RKEF,Operating,640.0,0.0,0.0,0.0,0.0,30000.0,300000.0,0.0,4036608,134.6,Power-based
+Oracle Nickel,Morowali Regency,Central Sulawesi,-2.86090888374523,122.155868800702,RKEF,Operating,0.0,0.0,0.0,0.0,0.0,36000.0,0.0,0,2448000,68.0,Intensity-based
+Lestari Smelter Indonesia,Morowali Regency,Central Sulawesi,-2.85057947264716,122.168994610921,RKEF,Operating,350.0,0.0,0.0,0.0,0.0,0.0,300000.0,0.0,2207520,68.0,Power-based
+Walsin Nickel Industrial Indonesia,Morowali Regency,Central Sulawesi,-2.8577087407882,122.159837893722,RKEF,Operating,350.0,0.0,0.0,0.0,0.0,0.0,300000.0,0.0,2207520,68.0,Power-based
+Indonesia Guang Ching Nickel and SSI,Morowali Regency,Central Sulawesi,-2.82831965030396,122.162319664885,RKEF,Operating,300.0,0.0,0.0,0.0,0.0,0.0,600000.0,0.0,1892160,68.0,Power-based
+Bahodopi Nickel Smelting Indonesia,Morowali Regency,Central Sulawesi,-3.09094,122.33023,HPAL,Construction,0.0,0.0,500.0,0.0,0.0,0.0,73000.0,0.0,1716960,13.4,Power-based
+Huayue Nickel Cobalt,Morowali Regency,Central Sulawesi,-2.85111166723729,122.180043120576,HPAL,Operating,250.0,0.0,0.0,0.0,0.0,60000.0,160500.0,0.0,1576800,26.3,Power-based
+Zhao Hui Nickel,Morowali Regency,Central Sulawesi,-2.85963986226067,122.155000831011,RKEF,Operating,0.0,0.0,0.0,0.0,0.0,23000.0,0.0,0,1564000,68.0,Intensity-based
+CORII RKEF,Morowali Regency,Central Sulawesi,-1.93869141224428,121.320296797426,RKEF,Planned,0.0,0.0,0.0,0.0,0.0,20000.0,200000.0,0,1360000,68.0,Intensity-based
+Bukit Smelter Indonesia,Morowali Regency,Central Sulawesi,-2.85005087260833,122.167514383938,RKEF,Operating,0.0,0.0,0.0,0.0,0.0,19000.0,150000.0,0,1292000,68.0,Intensity-based
+Cahaya Smelter Indonesia,Morowali Regency,Central Sulawesi,-2.85565622639356,122.168987996916,RKEF,Operating,0.0,0.0,0.0,0.0,0.0,19000.0,150000.0,0,1292000,68.0,Intensity-based
+Hengjaya Nickel Industry,Morowali Regency,Central Sulawesi,-2.84720726843122,122.164215585423,RKEF,Operating,0.0,0.0,0.0,0.0,0.0,15000.0,150000.0,0,1020000,68.0,Intensity-based
+Ranger Nickel Industry,Morowali Regency,Central Sulawesi,-2.85105650826125,122.163937924412,RKEF,Operating,0.0,0.0,0.0,0.0,0.0,15000.0,150000.0,0,1020000,68.0,Intensity-based
+Wanxiang Nickel Indonesia,Morowali Regency,Central Sulawesi,-2.7385893251359,122.028568769438,RKEF,Operating,150.0,0.0,0.0,0.0,0.0,0.0,351018.0,0.0,946080,68.0,Power-based
+Tsingshan Steel Indonesia,Morowali Regency,Central Sulawesi,-2.83150301383204,122.168885300445,BF,Operating,130.0,0.0,0.0,0.0,0.0,0.0,500000.0,0.0,819936,70.0,Power-based
+PT Metal Smelt Indo Selaras,Morowali Regency,Central Sulawesi,-3.04298747012378,122.264709376272,RKEF,Operating,130.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,819936,68.0,Power-based
+Fajar Metal Industry Excelsior Nickel Cobalt Project,Morowali Regency,Central Sulawesi,-2.83822430529276,122.117733364886,HPAL,Construction,0.0,0.0,0.0,0.0,0.0,60000.0,272700.0,0,804000,13.4,Intensity-based
+QMB New Energy Materials Indonesia,Morowali Regency,Central Sulawesi,-2.86010717942546,122.171462609067,HPAL,Operating,0.0,0.0,0.0,0.0,0.0,50000.0,136364.0,0,670000,13.4,Intensity-based
+Dingxing New Energy,Morowali Regency,Central Sulawesi,-2.82271172342708,122.137055315572,HPAL,Operating,0.0,0.0,0.0,0.0,0.0,50000.0,0.0,0,670000,13.4,Intensity-based
+PT ESG New Energy Material,Morowali Regency,Central Sulawesi,-2.85718814631921,122.172082174176,HPAL,Operating,0.0,0.0,0.0,0.0,0.0,30000.0,0.0,0,402000,13.4,Intensity-based
+Sulawesi Resources,Morowali Regency,Central Sulawesi,-2.70055948941961,121.98016583085,RKEF,Unclear,60.0,0.0,0.0,0.0,0.0,0.0,152400.0,0.0,378432,68.0,Power-based
+PT Meiming New Energy Material,Morowali Regency,Central Sulawesi,-2.86010279620949,122.145358157235,HPAL,Construction,0.0,0.0,0.0,0.0,0.0,25000.0,0.0,0,335000,13.4,Intensity-based
+Artabumi Sentra Industri,Morowali Regency,Central Sulawesi,0.0,0.0,BF,Stalled,15.0,0.0,0.0,0.0,0.0,0.0,72000.0,0.0,94608,70.0,Power-based
+CORII BF,Morowali Regency,Central Sulawesi,-1.93869141224428,121.320296797426,BF,No longer operational,15.0,0.0,0.0,0.0,0.0,8000.0,100000.0,0.0,94608,11.8,Power-based
+Ang And Fang Brother,Morowali Regency,Central Sulawesi,-2.78683713746305,122.083405959012,RKEF,Stalled,0.0,10.0,0.0,0.0,0.0,0.0,130508.0,0.0,46954,68.0,Power-based
+Alchemist Metal Industry,North Halmahera Regency,North Maluku,0.0,0.0,Unknown,Stalled,2202.0,0.0,0.0,0.0,0.0,0.0,1600000.0,0.0,13888454,60.0,Power-based
+Karunia Permai Sentosa,South Halmahera Regency,North Maluku,-1.56863134432775,127.428752314741,RKEF,Operating,0.0,0.0,0.0,0.0,0.0,185000.0,0.0,0,12580000,68.0,Intensity-based
+Obi Nickel Cobalt,South Halmahera Regency,North Maluku,-1.53389444850468,127.41908725139,HPAL,Operating,1520.0,0.0,0.0,0.0,0.0,65000.0,0.0,0.0,9586944,147.5,Power-based
+Halmahera Persada Lygend,South Halmahera Regency,North Maluku,-1.53887378195392,127.420130725153,HPAL,Operating,1250.0,0.0,0.0,0.0,0.0,55000.0,365000.0,0.0,7884000,143.3,Power-based
+Halmahera Jaya Feronikel,South Halmahera Regency,North Maluku,-1.56014879697201,127.427420671122,RKEF,Operating,1074.0,0.0,0.0,0.0,0.0,95000.0,870000.0,0.0,6773933,71.3,Power-based
+Angel Nickel Industry,Central Halmahera Regency,North Maluku,0.48068,127.99074,RKEF,Operating,760.0,0.0,0.0,0.0,0.0,36000.0,350000.0,0.0,4793472,133.2,Power-based
+PT Westrong Metal Industry,Central Halmahera Regency,North Maluku,0.484250049328921,127.986313601741,RKEF,Operating,0.0,0.0,0.0,0.0,0.0,56000.0,0.0,0,3808000,68.0,Intensity-based
+PT Langit Metal Industry,Central Halmahera Regency,North Maluku,0.485177317918801,127.984867275989,RKEF,Operating,0.0,0.0,0.0,0.0,0.0,36000.0,300000.0,0,2448000,68.0,Intensity-based
+Sunny Metal Industry,Central Halmahera Regency,North Maluku,0.487106858706739,127.981324757247,RKEF,Operating,380.0,0.0,0.0,0.0,0.0,55000.0,400000.0,0.0,2396736,43.6,Power-based
+Fajar Bhakti Lintas Nusantara,Central Halmahera Regency,North Maluku,-0.0695553166834322,129.3921427,BF,No longer operational,300.0,0.0,0.0,0.0,0.0,0.0,120000.0,0.0,1892160,70.0,Power-based
+Debonair Nickel Industry,Central Halmahera Regency,North Maluku,0.487668817784395,127.977118715487,RKEF,Construction,0.0,0.0,0.0,0.0,0.0,27500.0,0.0,0,1870000,68.0,Intensity-based
+Jade Bay Metal Industry,Central Halmahera Regency,North Maluku,0.489091049722045,127.977085187476,RKEF,Unclear,0.0,0.0,0.0,0.0,0.0,27500.0,0.0,0,1870000,68.0,Intensity-based
+PT Andalan Metal Industry,Central Halmahera Regency,North Maluku,0.484250049328921,127.986313601741,RKEF,Operating,0.0,0.0,0.0,0.0,0.0,24000.0,150000.0,0,1632000,68.0,Intensity-based
+Huashan Nickel Cobalt,Central Halmahera Regency,North Maluku,0.481106064991268,127.947138326664,HPAL,Stalled,0.0,0.0,0.0,0.0,0.0,120000.0,326000.0,0,1608000,13.4,Intensity-based
+Huake Nickel Indonesia,Central Halmahera Regency,North Maluku,0.487095939709902,127.993195587294,SAF,Operating,250.0,0.0,0.0,0.0,0.0,45000.0,350000.0,0.0,1576800,35.0,Power-based
+Weda Bay Nickel,Central Halmahera Regency,North Maluku,0.48075,127.99338,RKEF,Operating,250.0,0.0,0.0,0.0,0.0,30000.0,300000.0,0.0,1576800,52.6,Power-based
+Yashi Indonesia Investment,Central Halmahera Regency,North Maluku,0.48073,127.99653,RKEF,Operating,250.0,0.0,0.0,0.0,0.0,35000.0,300000.0,0.0,1576800,45.1,Power-based
+Youshan Nickel Industry,Central Halmahera Regency,North Maluku,0.48068,127.99945,RKEF,Operating,250.0,0.0,0.0,0.0,0.0,34000.0,300000.0,0.0,1576800,46.4,Power-based
+Perkasa Metal Industry,Central Halmahera Regency,North Maluku,0.488145455865328,127.970546796433,Unknown,Operating,206.0,0.0,0.0,0.0,0.0,0.0,150000.0,0.0,1299283,60.0,Power-based
+Wanatiara Persada,South Halmahera Regency,North Maluku,-1.4590046405692,127.438374798906,BF,Operating,150.0,0.0,0.0,0.0,0.0,0.0,209450.0,0.0,946080,70.0,Power-based
+PT Blue Sparking Energy,Central Halmahera Regency,North Maluku,0.484250049328921,127.986313601741,HPAL,Construction,0.0,0.0,0.0,0.0,0.0,67000.0,0.0,0,897800,13.4,Intensity-based
+Megah Surya Pertiwi,South Halmahera Regency,North Maluku,-1.52952559965166,127.422421955604,RKEF,Operating,120.0,0.0,0.0,0.0,0.0,25000.0,240000.0,0.0,756864,30.3,Power-based
+Antam HKBCL HPAL,East Halmahera Regency,North Maluku,0.843094760616897,128.249473362336,HPAL,Planned,0.0,0.0,0.0,0.0,0.0,55000.0,0.0,0,737000,13.4,Intensity-based
+ANTAM Feni Haltim RKEF,East Halmahera Regency,North Maluku,0.83684,128.24266,RKEF,Unclear,80.0,0.0,0.0,0.0,0.0,13500.0,64655.0,0.0,504576,37.4,Power-based
+First Pacific Mining,Central Halmahera Regency,North Maluku,0.0,0.0,Unknown,Stalled,41.0,0.0,0.0,0.0,0.0,0.0,30000.0,0.0,258595,60.0,Power-based
+Teka Mining Resources,Central Halmahera Regency,North Maluku,0.45996536934158,127.92242429557,Unknown,Stalled,0.0,14.0,0.0,0.0,0.0,0.0,300000.0,0.0,65735,60.0,Power-based
+Obsidian Stainless Steel,Konawe Regency,South East Sulawesi,-3.87107080589466,122.40347199787,RKEF,Operating,1780.0,0.0,0.0,0.0,0.0,0.0,2500000.0,0.0,11226816,68.0,Power-based
+Ceria Nugraha Indotama (RKEF) / Merah Putih smelter,Kolaka Regency,South East Sulawesi,-3.85415246173602,121.297981864151,RKEF,Operating,0.0,0.0,0.0,0.0,0.0,55600.0,252728.0,0,3780800,68.0,Intensity-based
+Virtue Dragon Nickel Industry (VDNI),Konawe Regency,South East Sulawesi,-3.9072272057542,122.417022046513,RKEF,Operating,530.0,0.0,0.0,0.0,0.0,0.0,1000000.0,0.0,3342816,68.0,Power-based
+Kolaka Nickel Indonesia,Kolaka Regency,South East Sulawesi,-4.23163100235464,121.584765653255,HPAL,Construction,0.0,0.0,0.0,0.0,0.0,120000.0,0.0,0,1608000,13.4,Intensity-based
+Ceria Nugraha Indotama (HPAL),Kolaka Regency,South East Sulawesi,-3.86572286265205,121.309797637587,HPAL,Construction,0.0,0.0,0.0,0.0,0.0,110900.0,293200.0,0,1486060,13.4,Intensity-based
+Anugrah Tambang Sejahtera,Morowali Regency,South East Sulawesi,-3.01680813805646,122.233574871863,RKEF,Stalled,0.0,0.0,0.0,0.0,0.0,14400.0,144000.0,0,979200,68.0,Intensity-based
+ANTAM Pomalaa RKEF,Kolaka Regency,South East Sulawesi,-4.18597128870594,121.611100571282,RKEF,Operating,60.0,100.0,0.0,0.0,0.0,27000.0,90000.0,0.0,847968,31.4,Power-based
+Surya Saga Utama,Bombana Regency,South East Sulawesi,-5.12133354679023,121.883441022571,Unknown,Stalled,30.0,10.0,0.0,0.0,0.0,0.0,302506.0,0.0,236170,60.0,Power-based
+Asia Mining Minerals,Kolaka Regency,South East Sulawesi,-4.28249428949051,121.579914856684,RKEF,Stalled,24.0,1.5,0.0,0.0,0.0,0.0,160712.0,0.0,158416,68.0,Power-based
+Bintang Smelter Indonesia,South Konawe Regency,South East Sulawesi,-4.40051665026324,122.198670979539,BF,No longer operational,0.0,4.5,3.0,0.0,0.0,0.0,40000.0,0.0,31431,70.0,Power-based
+Kinlin Nickel Industri,South Konawe Regency,South East Sulawesi,-4.45663313945751,122.352577613714,Unknown,Stalled,2.0,2.0,0.0,0.0,0.0,0.0,17000.0,0.0,22005,60.0,Power-based
+Mapan Asri Sejahtera,Kolaka Regency,South East Sulawesi,-4.27126551488023,121.565690265067,BF,Operating,3.0,0.0,0.0,0.0,0.0,0.0,21531.0,0.0,18922,70.0,Power-based
+Integra Mining Nusantara,South Konawe Regency,South East Sulawesi,-4.43789965420115,122.485019596937,Unknown,Stalled,0.0,4.0,0.0,0.0,0.0,0.0,285220.0,0.0,18781,60.0,Power-based
+Sambas Minerals Mining,South Konawe Regency,South East Sulawesi,-4.45935420048957,122.359915890572,RKEF,Stalled,0.0,3.0,0.0,0.0,0.0,0.0,104544.0,0.0,14086,68.0,Power-based
+Mahkota Konaweeha,Kendari City,South East Sulawesi,-4.00619632489727,122.636653236766,Unknown,Stalled,0.0,3.0,0.0,0.0,0.0,0.0,62000.0,0.0,14086,60.0,Power-based
+Artha Mining Industry,Bombana Regency,South East Sulawesi,-4.89399835956639,121.987146995586,Unknown,Stalled,0.0,1.5,0.0,0.0,0.0,21500.0,200000.0,0.0,7043,0.3,Power-based
+Adhikara Cipta Mulia,North Konawe Regency,South East Sulawesi,-3.52320167397664,122.164807122561,HPAL,Unclear,0.0,1.1,0.0,0.0,0.0,30400.0,76500.0,0.0,5165,0.2,Power-based

@@ -1,0 +1,27 @@
+﻿KESDM,KementerianEnergidanSumberDayaMineral
+LHV,"LowerHeatingValue,NilaiKalorBawah"
+µg/Nm3,"Mikrogramperkubikmeternormal(pada101.325kPa,273.15K)"
+mg/Nm3,"Miligramperkubikmeternormal(pada101.325kPa,273.15K)"
+MtCO -eq 2,Jutatonsetarakarbondioksida
+MW,Megawatt
+MWh,"Megawatt-hour,Megawatt-jam"
+Nm3/GJ,"MeterkubiknormalperGigaJoule(pada101.325kPa,273.15K)"
+Nm3/MWh,"MeterkubiknormalmetreperMegawatt-jam(pada101.325kPa,273.15K)"
+NO 2,NitrogenDioksida
+NO x,NitrogenOksida
+O 2,Oksigen
+O 3,"Ozon,permukaan"
+PDB,ProdukDomestikBruto
+PDRB,ProdukDomestikRegionalBruto
+PLN,PerusahaanListrikNegara
+PLTU,PembangkitListrikTenagaUap
+PM,"ParticulateMatter,Partikulat"
+PM 2.5,"Partikulatdenganpartikelyangberdiameter2,5mikronataukurang"
+PM 10,Partikulatdenganpartikelyangberdiameter10mikronataukurang
+RKEF,"RotaryKilnElectricFurnace,tungkulistriktanurputar"
+SO 2,Sulfurdioksida
+SO x,Sulfuroksida
+tpa,"Metrictonperannum,tonmetrikpertahun"
+UNEP,UnitedNationsEnvironmentProgramme
+USD,"UnitedStatesDollar,DollarAmerikaSerikat"
+WRF,WeatherResearchForecasting
