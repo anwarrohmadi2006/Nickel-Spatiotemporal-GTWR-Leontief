@@ -15,7 +15,7 @@ print(" ST-LIO-Graph: Spatio-Temporal Leontief I-O Graph Model")
 print("==========================================================\n")
 
 # 1. PARSING DATA SEKTORAL (Dari Laporan PDF CREA)
-csv_dir = r"C:\Users\user\Downloads\IMIP\tables_csv"
+csv_dir = r"c:\Users\msi\Documents\New folder\Nickel-Spatiotemporal-GTWR-Leontief\tables_csv"
 file_map = {"Table06": ("Sulteng", 1), "Table08": ("Sulteng", 9), 
             "Table10": ("Sultra", 1), "Table12": ("Sultra", 9)}
 prov_coords = {"Sulteng": (-1.43, 121.44), "Sultra": (-4.14, 122.17)}

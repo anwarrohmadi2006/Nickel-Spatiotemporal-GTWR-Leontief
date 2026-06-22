@@ -101,7 +101,7 @@ if __name__ == "__main__":
         "IEEFA_Report-Indonesias_nickel_companies_need_RE_Oct2024.md"
     ]
 
-    base_dir = r"C:\Users\user\Downloads\IMIP"
+    base_dir = r"c:\Users\msi\Documents\New folder\Nickel-Spatiotemporal-GTWR-Leontief"
 
     for fname in files:
         full_path = os.path.join(base_dir, fname)

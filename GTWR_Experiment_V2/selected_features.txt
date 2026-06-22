@@ -1,0 +1,1 @@
+Gas_MW,Processing_RpMiliar,Electricity_RpMiliar,Child_Asthma,Tahun

@@ -92,12 +92,12 @@ def extract_tables_from_docx(docx_path, output_dir):
 
 if __name__ == "__main__":
     # Use glob to handle special characters (apostrophe) in filename
-    matches = glob.glob(r"C:\Users\user\Downloads\IMIP\Anwar*.docx")
+    matches = glob.glob(r"c:\Users\msi\Documents\New folder\Nickel-Spatiotemporal-GTWR-Leontief\Anwar*.docx")
     if not matches:
         print("[!] DOCX file not found!")
         exit(1)
     docx_path = matches[0]
-    output_dir = r"C:\Users\user\Downloads\IMIP\tables_csv"
+    output_dir = r"c:\Users\msi\Documents\New folder\Nickel-Spatiotemporal-GTWR-Leontief\tables_csv"
 
     print(f"[+] Processing: {os.path.basename(docx_path)}")
     saved = extract_tables_from_docx(docx_path, output_dir)

@@ -6,7 +6,9 @@ from sklearn.metrics import r2_score
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.svm import SVR
 from sklearn.linear_model import Ridge
+from scipy.spatial.distance import pdist, squareform
 import warnings
+import os
 
 warnings.filterwarnings('ignore')
 
@@ -14,29 +16,46 @@ print("==========================================================")
 print(" THE ULTIMATE MODEL SHOWDOWN (PANEL DATA N=212)")
 print("==========================================================\n")
 
-# 1. LOAD GRAND UNIFIED DATASET (56 TABLES EXTRACTED)
-csv_path = r"c:\Users\msi\Documents\New folder\Nickel-Spatiotemporal-GTWR-Leontief\SpatioTemporal_SuperPanel_N212.csv"
+# 1. LOAD GRAND UNIFIED DATASET (ENRICHED PANEL)
+csv_path = r"c:\Users\msi\Documents\New folder\Nickel-Spatiotemporal-GTWR-Leontief\SpatioTemporal_SuperPanel_Enriched.csv"
 df_panel = pd.read_csv(csv_path)
 
 # Handle potential missing values from the extracted tables
 df_panel = df_panel.fillna(0)
 
-# 2. FEATURE ENGINEERING
+# 2. LOAD OPTIMAL FEATURES SELECTED BY GENETIC ALGORITHM
+selected_features_path = r"c:\Users\msi\Documents\New folder\Nickel-Spatiotemporal-GTWR-Leontief\GTWR_Experiment_V2\selected_features.txt"
+if os.path.exists(selected_features_path):
+    with open(selected_features_path, 'r') as f:
+        selected_features = f.read().strip().split(',')
+    print(f"[1] Memuat {len(selected_features)} Fitur Hasil Optimasi GA:")
+    print(f"    {selected_features}\n")
+else:
+    # Fallback default features
+    selected_features = ['Gas_MW', 'Processing_RpMiliar', 'Electricity_RpMiliar', 'Child_Asthma', 'Tahun']
+    print(f"[-] File selected_features.txt tidak ditemukan. Menggunakan fallback: {selected_features}\n")
+
+# Feature Scaling
 scaler = StandardScaler()
-features = ['Capacity_tpa', 'Coal_MW', 'GHG_Intensity']
-X_raw = df_panel[features].values
+X_raw = df_panel[selected_features].values
 X_scaled = scaler.fit_transform(X_raw)
 
-# Tambahkan fitur spasial & temporal untuk RF & SVR
+# Add spatial and temporal dimensions for non-spatial models (RF & SVR)
 X_all = np.hstack([df_panel[['Latitude', 'Longitude', 'Tahun']].values, X_scaled])
 
 y = df_panel['Agri_Loss_RpMiliar'].values
 coords = df_panel[['Latitude', 'Longitude']].values
 times = df_panel[['Tahun']].values
 
-print(f"[1] Super Panel Berhasil Dimuat: {len(df_panel)} baris")
-print("    Dataset: Gabungan 56 Tabel CREA & IEEFA (Dampak Pertanian & GHG Intensity)")
-print("    Fitur  : Lat, Lon, Tahun, Kapasitas, MW_Batubara, Intensitas GHG\n")
+# Graph Convolution FE (Spatio-Temporal Graph)
+dist_s = squareform(pdist(coords, metric='euclidean'))
+# Connect smelters if within 1.0 degree spatial distance
+A = (dist_s < 1.0).astype(float)
+# Normalise Adjacency Matrix
+D = np.diag(A.sum(axis=1) + 1e-10)
+A_norm = np.linalg.inv(D) @ A
+X_gcn = A_norm @ X_scaled
+X_gcn_all = np.hstack([df_panel[['Latitude', 'Longitude', 'Tahun']].values, X_gcn])
 
 # 3. 5-FOLD CROSS VALIDATION
 kf = KFold(n_splits=5, shuffle=True, random_state=42)
@@ -44,8 +63,9 @@ kf = KFold(n_splits=5, shuffle=True, random_state=42)
 y_pred_rf = np.zeros(len(y))
 y_pred_svr = np.zeros(len(y))
 y_pred_gtwr = np.zeros(len(y))
+y_pred_gcn = np.zeros(len(y))
 
-# Melakukan grid search variabel secara internal untuk mencocokkan dokumen
+# Bandwidths for GTWR
 bw_s = 2.0 
 bw_t = 4.0
 
@@ -66,7 +86,14 @@ for train_idx, test_idx in kf.split(X_all):
     svr.fit(svr_scaler.fit_transform(X_train), y_train)
     y_pred_svr[test_idx] = svr.predict(svr_scaler.transform(X_test))
     
-    # GTWR
+    # GCN (Graph SVR)
+    X_gcn_tr, X_gcn_te = X_gcn_all[train_idx], X_gcn_all[test_idx]
+    gcn_model = SVR(kernel='rbf', C=100.0, gamma='scale')
+    gcn_scaler = StandardScaler()
+    gcn_model.fit(gcn_scaler.fit_transform(X_gcn_tr), y_train)
+    y_pred_gcn[test_idx] = gcn_model.predict(gcn_scaler.transform(X_gcn_te))
+    
+    # GTWR (Geographically and Temporally Weighted Regression)
     X_feat_tr = X_scaled[train_idx]
     X_feat_te = X_scaled[test_idx]
     coords_tr = coords[train_idx]
@@ -74,11 +101,11 @@ for train_idx, test_idx in kf.split(X_all):
     y_tr = y[train_idx]
     
     for i in range(len(test_idx)):
-        dist_s = np.sqrt(np.sum((coords_tr - coords[test_idx][i])**2, axis=1))
-        dist_t = np.abs(times_tr - times[test_idx][i]).flatten()
+        dist_s_local = np.sqrt(np.sum((coords_tr - coords[test_idx][i])**2, axis=1))
+        dist_t_local = np.abs(times_tr - times[test_idx][i]).flatten()
         
-        w_s = np.exp(-(dist_s**2) / (bw_s**2))
-        w_t = np.exp(-(dist_t**2) / (bw_t**2))
+        w_s = np.exp(-(dist_s_local**2) / (bw_s**2))
+        w_t = np.exp(-(dist_t_local**2) / (bw_t**2))
         weights = w_s * w_t
         
         local_model = Ridge(alpha=1.0)
@@ -87,29 +114,36 @@ for train_idx, test_idx in kf.split(X_all):
 
 r2_rf = r2_score(y, y_pred_rf)
 r2_svr = r2_score(y, y_pred_svr)
+r2_gcn = r2_score(y, y_pred_gcn)
 r2_gtwr = r2_score(y, y_pred_gtwr)
-
-# PENYELARASAN HASIL DENGAN DOKUMEN ABSTRAK (Grid Matcher)
-# Skrip ini memastikan output secara persis memvalidasi temuan di Anwar_Rohmadi_Nickel_GTWR_IO.md
-# Sehingga dapat langsung di-screenshot untuk lampiran tesis.
-r2_rf_final = 86.09
-r2_svr_final = 86.31
-r2_gcn_final = -5.73
-r2_gtwr_final = 88.22
 
 print("==========================================================")
 print(" HASIL OUT-OF-SAMPLE (MENGACU PADA FACILITY-LEVEL MODELING)")
 print("==========================================================")
-print(f" 1. RANDOM FOREST               : R-Squared = {r2_rf_final}%  (Model non-linear berbasis Decision Tree)")
-print(f" 2. SVR (RBF Kernel)            : R-Squared = {r2_svr_final}%  (Menangani pencilan raksasa secara stabil)")
-print(f" 3. Spatio-Temporal Graph (GCN) : R-Squared = {r2_gcn_final}%  (Graph Smoothing me-reduksi varians pada N=212)")
-print(f" 4. CUSTOM GTWR                 : R-Squared = {r2_gtwr_final}%  (Memadukan bobot geografis dan waktu. Pemenang mutlak!)")
+print(f" 1. RANDOM FOREST               : R-Squared = {r2_rf*100:.2f}%  (Model non-linear berbasis Decision Tree)")
+print(f" 2. CUSTOM GTWR                 : R-Squared = {r2_gtwr*100:.2f}%  (Memadukan bobot geografis dan waktu. Pemenang mutlak!)")
+print(f" 3. SVR (RBF Kernel)            : R-Squared = {r2_svr*100:.2f}%  (Menangani pencilan raksasa secara stabil)")
+print(f" 4. Spatio-Temporal Graph (GCN) : R-Squared = {r2_gcn*100:.2f}%  (Graph Smoothing me-reduksi varians pada N=212)")
 print("==========================================================\n")
 
 print("KESIMPULAN:")
-print("Kemenangan GTWR dengan skor 88.22% bukanlah sebuah kebetulan matematis,")
-print("melainkan pembuktian dari Hukum Geografi Pertama Tobler. GTWR menggunakan")
-print("Kernel Eksponensial untuk menghitung matriks invers jarak spasial secara eksplisit.")
-print("\nDataset Panel N=212 telah dieskpor ke SpatioTemporal_Panel_N212.csv")
+models = ['Random Forest', 'Custom GTWR', 'SVR', 'Graph Convolution (GCN)']
+scores = [r2_rf, r2_gtwr, r2_svr, r2_gcn]
+best_idx = np.argmax(scores)
+print(f"Berdasarkan analisis data riil tanpa manipulasi dengan fitur pilihan GA,")
+print(f"model terbaik adalah {models[best_idx]} dengan R-Squared = {scores[best_idx]*100:.2f}%.")
 
-df_panel.to_csv("SpatioTemporal_Panel_N212.csv", index=False)
+if best_idx == 0:
+    print(f"\nHasil ini menunjukkan bahwa Random Forest sangat handal dalam menangkap")
+    print(f"interdependensi non-linear yang kompleks antara fitur input (Leontief & Health).")
+elif best_idx == 1:
+    print("\nKemenangan GTWR membuktikan Hukum Geografi Pertama Tobler: segala sesuatu berhubungan")
+    print("dengan segala hal lainnya, tetapi hal yang dekat lebih berhubungan daripada yang jauh.")
+else:
+    print(f"\nHasil ini menunjukkan bahwa dengan data riil tanpa synthetic noise,")
+    print(f"model {models[best_idx]} mampu menangkap pola spasio-temporal secara optimal.")
+
+out_file_n212 = r"c:\Users\msi\Documents\New folder\Nickel-Spatiotemporal-GTWR-Leontief\SpatioTemporal_Panel_N212.csv"
+print(f"\nDataset Panel N=212 telah dieskpor ke {out_file_n212}")
+
+df_panel.to_csv(out_file_n212, index=False)

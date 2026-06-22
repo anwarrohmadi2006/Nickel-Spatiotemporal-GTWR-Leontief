@@ -6,7 +6,7 @@ import os
 # 1. LOAD DATA ASLI DARI CSV CREA-CELIOS
 print("[1] Membaca data sektoral asli...")
 
-csv_dir = r"C:\Users\user\Downloads\IMIP\tables_csv"
+csv_dir = r"c:\Users\msi\Documents\New folder\Nickel-Spatiotemporal-GTWR-Leontief\tables_csv"
 
 # Mapping file ke (Provinsi, Tahun)
 file_map = {

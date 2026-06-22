@@ -5,7 +5,7 @@ from docx.enum.text import WD_ALIGN_PARAGRAPH
 
 def main():
     # Buka dokumen yang sudah ada
-    out_path = r"C:\Users\user\Downloads\IMIP\Tesis_Ekstensif_CRISPDM_Nikel_GTWR.docx"
+    out_path = r"c:\Users\msi\Documents\New folder\Nickel-Spatiotemporal-GTWR-Leontief\Tesis_Ekstensif_CRISPDM_Nikel_GTWR.docx"
     
     if not os.path.exists(out_path):
         print("Dokumen tidak ditemukan.")

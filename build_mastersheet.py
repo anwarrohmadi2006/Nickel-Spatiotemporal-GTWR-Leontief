@@ -11,7 +11,7 @@ import csv, os, math
 from collections import defaultdict
 
 # ── Paths ──────────────────────────────────────────────────────
-BASE   = r"C:\Users\user\Downloads\IMIP"
+BASE   = r"c:\Users\msi\Documents\New folder\Nickel-Spatiotemporal-GTWR-Leontief"
 CSV_DIR = os.path.join(BASE, "tables_csv")
 OUT    = os.path.join(BASE, "mastersheet_GTWR.csv")
 

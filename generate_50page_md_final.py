@@ -115,7 +115,7 @@ def main():
         tech = random.choice(["RKEF", "HPAL", "MHP"])
         md.append(f"| {i} | Morowali / Weda Bay | {coal} | {co2} | {tech} | {lat} | {lon} |")
 
-    out_path = r"C:\Users\user\Downloads\IMIP\Tesis_Super_Ekstensif_50Hal_Final.md"
+    out_path = r"c:\Users\msi\Documents\New folder\Nickel-Spatiotemporal-GTWR-Leontief\Tesis_Super_Ekstensif_50Hal_Final.md"
     with open(out_path, 'w', encoding='utf-8') as f:
         f.write("\n".join(md))
     print(f"Laporan berhasil disimpan di: {out_path}")

@@ -103,7 +103,7 @@ def main():
     )
 
     # Simpan dokumen
-    out_path = r"C:\Users\user\Downloads\IMIP\Kamus_Variabel_57Tabel_Nikel.docx"
+    out_path = r"c:\Users\msi\Documents\New folder\Nickel-Spatiotemporal-GTWR-Leontief\Kamus_Variabel_57Tabel_Nikel.docx"
     doc.save(out_path)
     print(f"File DOCX berhasil disimpan di: {out_path}")
 

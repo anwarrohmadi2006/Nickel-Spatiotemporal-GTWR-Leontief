@@ -111,7 +111,7 @@ def main():
     md.append("Tabel berikut mencetak utuh keseluruhan dataset riil yang digunakan untuk inferensi ekonometrika pada studi ini tanpa penyaringan apa pun:\n")
     md.append(data_md + "\n")
 
-    out_path = r"C:\Users\user\Downloads\IMIP\Tesis_Riil_Nikel_GTWR.md"
+    out_path = r"c:\Users\msi\Documents\New folder\Nickel-Spatiotemporal-GTWR-Leontief\Tesis_Riil_Nikel_GTWR.md"
     with open(out_path, 'w', encoding='utf-8') as f:
         f.write("\n".join(md))
     print(f"Laporan riil berhasil disimpan di: {out_path}")

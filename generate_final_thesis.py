@@ -87,7 +87,7 @@ def main():
     md.append(filter_em_dash("Tabel berikut mencetak secara transparan himpunan data spasial dan teknis absolut dari 48 fasilitas peleburan nikel yang diobservasi, tanpa proses penyesatan fabrikasi data:"))
     md.append(data_md + "\n")
 
-    out_path = r"C:\Users\user\Downloads\IMIP\Tesis_Pakar_Nikel_Final.md"
+    out_path = r"c:\Users\msi\Documents\New folder\Nickel-Spatiotemporal-GTWR-Leontief\Tesis_Pakar_Nikel_Final.md"
     with open(out_path, 'w', encoding='utf-8') as f:
         f.write("\n".join(md))
     print(f"Laporan riil komprehensif berhasil disimpan di: {out_path}")

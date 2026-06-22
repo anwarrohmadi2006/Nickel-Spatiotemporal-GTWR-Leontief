@@ -95,7 +95,7 @@ def extract_tables_to_csv(pdf_path, output_dir):
 
 
 if __name__ == "__main__":
-    base_dir = r"C:\Users\user\Downloads\IMIP"
+    base_dir = r"c:\Users\msi\Documents\New folder\Nickel-Spatiotemporal-GTWR-Leontief"
     output_dir = os.path.join(base_dir, "tables_csv")
 
     files = [

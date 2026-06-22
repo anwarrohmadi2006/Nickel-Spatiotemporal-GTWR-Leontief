@@ -18,7 +18,7 @@ print("==========================================================")
 print(" GRAND UNIFICATION MODEL (N = 106 Smelters)")
 print("==========================================================\n")
 
-csv_dir = r"C:\Users\user\Downloads\IMIP\tables_csv"
+csv_dir = r"c:\Users\msi\Documents\New folder\Nickel-Spatiotemporal-GTWR-Leontief\tables_csv"
 
 # 1. LOAD LAYER FONDASI (CGS Smelter Dataset)
 cgs_smelter = pd.read_csv(os.path.join(csv_dir, "CGS_Nickel_Smelter_Dataset.csv"))

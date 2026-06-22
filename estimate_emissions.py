@@ -32,7 +32,7 @@ def parse_float(val):
         return 0.0
 
 # ── Baca CGS Dataset ───────────────────────────────────────────
-fpath = r'C:\Users\user\Downloads\IMIP\tables_csv\CGS_Nickel_Smelter_Dataset.csv'
+fpath = r'c:\Users\msi\Documents\New folder\Nickel-Spatiotemporal-GTWR-Leontief\tables_csv\CGS_Nickel_Smelter_Dataset.csv'
 with open(fpath, encoding='utf-8-sig') as f:
     rows = list(csv.DictReader(f))
 
@@ -100,7 +100,7 @@ for r in rows:
 results.sort(key=lambda x: (x['Province'], -x['Estimated_CO2_tpy']))
 
 # ── Output CSV ─────────────────────────────────────────────────
-out_csv = r'C:\Users\user\Downloads\IMIP\tables_csv\CGS_Emission_Estimates.csv'
+out_csv = r'c:\Users\msi\Documents\New folder\Nickel-Spatiotemporal-GTWR-Leontief\tables_csv\CGS_Emission_Estimates.csv'
 fieldnames = list(results[0].keys())
 with open(out_csv, 'w', newline='', encoding='utf-8-sig') as f:
     writer = csv.DictWriter(f, fieldnames=fieldnames)

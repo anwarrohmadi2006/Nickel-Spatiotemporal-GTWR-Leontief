@@ -9,7 +9,7 @@ from sklearn.model_selection import LeaveOneOut
 from sklearn.metrics import r2_score, mean_squared_error
 
 # 1. LOAD DATA MASTERSHEET
-MASTER = r"C:\Users\user\Downloads\IMIP\mastersheet_GTWR.csv"
+MASTER = r"c:\Users\msi\Documents\New folder\Nickel-Spatiotemporal-GTWR-Leontief\mastersheet_GTWR.csv"
 df = pd.read_csv(MASTER, encoding='utf-8-sig')
 
 # Kita gunakan data lengkap 48 baris (12 Kab x 4 Tahun)

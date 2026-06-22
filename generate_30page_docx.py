@@ -151,7 +151,7 @@ def main():
         add_padded_paragraph(doc, '2. Transisi Menuju Ekonomi yang Berkeadilan (Equitable Development): Kebijakan hilirisasi nikel Indonesia memerlukan penerapan instrumen Pajak Karbon Bergradasi (Spatially-Graded Carbon Tax) dan kewajiban transisi mandatori ke RE+APC untuk menyantuni biaya kerugian sektor akar rumput. Ini adalah syarat tak terbantahkan untuk mengaransi pembangunan ekonomi lintas-sektoral yang lestari, setara, dan adil di episentrum material baterai dunia.')
 
     # Simpan dokumen baru dengan nama file baru untuk menghindari PermissionError
-    out_path = r"C:\Users\user\Downloads\IMIP\Tesis_Final_RE_APC_CRISPDM_Nikel_GTWR.docx"
+    out_path = r"c:\Users\msi\Documents\New folder\Nickel-Spatiotemporal-GTWR-Leontief\Tesis_Final_RE_APC_CRISPDM_Nikel_GTWR.docx"
     doc.save(out_path)
     print(f"Laporan Tesis DOCX 30-halaman berhasil disimpan di: {out_path}")
 

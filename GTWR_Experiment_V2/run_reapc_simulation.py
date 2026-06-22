@@ -9,7 +9,7 @@ import io
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
 
 # 1. LOAD DATA RESOLUSI KABUPATEN
-MASTER = r"C:\Users\user\Downloads\IMIP\mastersheet_GTWR.csv"
+MASTER = r"c:\Users\msi\Documents\New folder\Nickel-Spatiotemporal-GTWR-Leontief\mastersheet_GTWR.csv"
 print("[1] Membaca Data Mastersheet Kabupaten...")
 df_all = pd.read_csv(MASTER, encoding='utf-8-sig')
 
@@ -125,6 +125,6 @@ df_sim['Kerugian_BAU_TrRp'] = np.round(yhat_BAU_arr, 3)
 df_sim['Kerugian_REAPC_TrRp'] = np.round(yhat_REAPC_arr, 3)
 df_sim['Surplus_Diselamatkan_TrRp'] = np.round(surplus_arr, 3)
 
-out_sim = r"C:\Users\user\Downloads\IMIP\RE_APC_Simulation_Results.csv"
+out_sim = r"c:\Users\msi\Documents\New folder\Nickel-Spatiotemporal-GTWR-Leontief\RE_APC_Simulation_Results.csv"
 df_sim.to_csv(out_sim)
 print(f"\n[DONE] Matriks hasil simulasi counter-factual disimpan ke: {out_sim}")

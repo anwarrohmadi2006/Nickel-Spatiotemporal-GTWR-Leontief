@@ -10,7 +10,7 @@ import io
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
 
 # 1. LOAD DATA YANG VALID SECARA SPASIAL
-MASTER = r"C:\Users\user\Downloads\IMIP\mastersheet_GTWR.csv"
+MASTER = r"c:\Users\msi\Documents\New folder\Nickel-Spatiotemporal-GTWR-Leontief\mastersheet_GTWR.csv"
 print("[1] Membaca Data Valid (Tingkat Kabupaten)...")
 df = pd.read_csv(MASTER, encoding='utf-8-sig')
 

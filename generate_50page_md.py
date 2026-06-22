@@ -103,7 +103,7 @@ Surakarta, 57168
         md_content += filter_em_dash("Pembuktian model GTWR secara tak terelakkan menuntut revisi tatanan regulasi hilirisasi nasional. Pendekatan perizinan sektoral tunggal harus segera diruntuhkan dan digantikan oleh perizinan berlapis berbasis Matriks Jarak Geospasial. Koordinat geografis wilayah timur Indonesia (Morowali dan Weda Bay) yang secara matematis telah terbukti menanggung limpahan efek toksik dari smelter raksasa wajib segera dikenakan status Moratorium Ekspansi Industri atau penghentian izin operasional baru secara sepihak.\n\n")
         md_content += filter_em_dash("Sebagai kesimpulan akhir, penelitian ekstensif ini berani mendeklarasikan bahwa pengorbanan sektor pertanian demi membiayai hilirisasi baterai listrik global adalah sebuah mitos industri belaka. Dengan menerapkan transisi paksa menuju skenario RE+APC dipadukan dengan pengenaan instrumen Pajak Karbon Bergradasi Geografis (Spatially-Graded Carbon Tax), Indonesia secara faktual mampu mendikte arah transisi hijau yang adil (equitable development) dan memastikan Surplus PDRB triliunan rupiah kembali ke tangan masyarakat lokal yang paling terdampak.\n\n")
 
-    out_path = r"C:\Users\user\Downloads\IMIP\Tesis_Kompilasi_50Halaman_Nikel.md"
+    out_path = r"c:\Users\msi\Documents\New folder\Nickel-Spatiotemporal-GTWR-Leontief\Tesis_Kompilasi_50Halaman_Nikel.md"
     with open(out_path, 'w', encoding='utf-8') as f:
         f.write(md_content)
     print(f"Laporan Tesis Markdown 50-halaman berhasil disimpan di: {out_path}")

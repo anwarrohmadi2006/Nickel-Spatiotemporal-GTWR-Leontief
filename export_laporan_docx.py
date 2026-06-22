@@ -122,7 +122,7 @@ def main():
     doc.add_heading('Konklusi', level=2)
     doc.add_paragraph('Integrasi antara analisis Input-Output Leontief sebagai basis Ground Truth dengan Ekonometrika Spasial (GTWR) dalam kerangka Facility-Level Panel Dataset, menghasilkan instrumen analitik yang presisi tinggi. Regulasi transisi energi ke depan memerlukan mitigasi tata ruang terintegrasi guna meminimalisasi konflik pemanfaatan ruang antara sektor ekstraktif dan sektor penyediaan pangan.')
 
-    out_path = r"C:\Users\user\Downloads\IMIP\Laporan_CRISPDM_Nikel_GTWR.docx"
+    out_path = r"c:\Users\msi\Documents\New folder\Nickel-Spatiotemporal-GTWR-Leontief\Laporan_CRISPDM_Nikel_GTWR.docx"
     doc.save(out_path)
     print(f"Laporan DOCX berhasil disimpan di: {out_path}")
 

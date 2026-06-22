@@ -119,7 +119,7 @@ def extract_tables_from_pdf(pdf_path, output_md_path):
 
 
 if __name__ == "__main__":
-    base_dir = r"C:\Users\user\Downloads\IMIP"
+    base_dir = r"c:\Users\msi\Documents\New folder\Nickel-Spatiotemporal-GTWR-Leontief"
     
     files = [
         {
