@@ -16,8 +16,8 @@ import io
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
 
 # ---- Paths -----------------------------------------------------------
-MASTER  = r"C:\Users\user\Downloads\IMIP\mastersheet_GTWR.csv"
-OUT_DIR = r"C:\Users\user\Downloads\IMIP"
+MASTER  = r"c:\Users\msi\Documents\New folder\Nickel-Spatiotemporal-GTWR-Leontief\mastersheet_GTWR.csv"
+OUT_DIR = r"c:\Users\msi\Documents\New folder\Nickel-Spatiotemporal-GTWR-Leontief"
 
 # ---- Load data -------------------------------------------------------
 print("[1] Loading mastersheet...")
